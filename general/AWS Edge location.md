@@ -1,0 +1,1 @@
+**Edge locations are AWS data centers designed to deliver services with the lowest latency possible.** Amazon has dozens of these data centers spread across the world. They’re closer to users than Regions or Availability Zones, often in major cities, so responses can be fast and snappy.

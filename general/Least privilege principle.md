@@ -1,0 +1,1 @@
+The least privilege principle states that you should not give more permissions than a user needs.

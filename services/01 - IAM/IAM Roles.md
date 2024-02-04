@@ -1,0 +1,1 @@
+AWS roles are used to give entites permissions to perform certain action on AWS

@@ -1,0 +1,1 @@
+Tags are everywhere in AWS and are used to provide metadata.
