@@ -10,11 +10,9 @@ We have exactly-once send capability and exact message ordering, but there is a 
 
 Unlike standard queues, FIFO queues don't introduce duplicate messages. FIFO queues help you avoid sending duplicates to a queue. If you retry the `SendMessage` action within the 5-minute deduplication interval, Amazon SQS doesn't introduce any duplicates into the queue.
 
-To configure deduplication, you must do one of the following:
-
-There are two methods for this:
+There are two methods for deduplication:
 - Content-based deduplication: A SHA-256 hash of the message body is created and used to compare messages.
-- Message Deduplication ID: If a message with a particular message deduplication ID is sent successfully, any messages sent with the same message deduplication ID are accepted successfully but aren't delivered during the 5-minute deduplication interval.
+- Message Deduplication ID: A Id that we send with each message. If a message with a particular message deduplication ID is sent successfully, any messages sent with the same message deduplication ID are accepted successfully but aren't delivered during the 5-minute deduplication interval.
 
 ### Message Grouping
 
